@@ -13,13 +13,14 @@ function mostrar() {
     let puntoDosY = Number($form.querySelector('#puntoDosY').value)
     let nodoResultado = document.querySelector('#resultado')
     let distanciaMetros = Math.sqrt(Math.pow(puntoDosX - puntoUnoX, 2) + Math.pow(puntoDosY - puntoUnoY, 2));
-    let distanciaKm = (distanciaMetros * 0.001).toFixed(2)
+    let distanciaKm = (distanciaMetros * 0.001)
     let kmXhoraAmetrosXMin = 83.3333;
-    let tiempoCaminata = distanciaMetros / kmXhoraAmetrosXMin;
+    let tiempoCaminataMinutos = distanciaMetros / kmXhoraAmetrosXMin;
+    let tiempoCaminataHoras = (tiempoCaminataMinutos/60)
 
-    if (tiempoCaminata > 0) {
+    if (tiempoCaminataMinutos > 0) {
         nodoResultado.className = ('valido')
-        nodoResultado.innerText = `La distancia entre el punto 1 y el punto 2 es de ${distanciaMetros.toFixed(2)} metros (${distanciaKm}km) \n Tardarias ${tiempoCaminata.toFixed(2)} minutos en llegar caminando a 5km/h.`
+        nodoResultado.innerText = `• La distancia entre el punto 1 y el punto 2 es de ${distanciaMetros.toFixed(0)} metros (${distanciaKm.toFixed(1)}km). \n • Tardarias ${tiempoCaminataMinutos.toFixed(0)} minutos (${tiempoCaminataHoras.toFixed(1)} horas) en llegar caminando a 5km/h.`
     } else {
         nodoResultado.className = ('error')
         nodoResultado.innerText = 'Completa los campos correctamente'
