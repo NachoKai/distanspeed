@@ -1,58 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      r/Argentina programa | Intro a JavaScript | Distancia y Velocidad
+    </title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>r/Argentina programa | Intro a JavaScript | Distancia y Velocidad</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-
-<body>
+  <body>
     <div class="contenedor">
-        <form id="formulario" name="formulario">
-            <h3>Distancia y Velocidad</h3>
-            <h6>Escribir un programa que dadas las coordenadas (x, y) de un punto P1 y un punto P2:
-                <br>A. Calcular la distancia en metros que hay entre los dos puntos.
-                <br>B. El tiempo que se tardaría yendo del punto P1 al punto P2 caminando, sabiendo que se camina a
-                razón de 5 k/h.</h6>
-            <br>
-            <hr>
-            <br>
-            <div class="calculoEdad-formulario">
-                <table class="tg">
-                    <tr>
-                        <th class="tg-0pky">
-                            <h4>Punto 1</h4>
-                            <label for="anioActual">Coordenada X:</label>
-                            <input type="number" name="coord" id="puntoUnoX" required value="0" /> metros.
-                            <br>
-                            <label for="anioActual">Coordenada Y:</label>
-                            <input type="number" name="coord" id="puntoUnoY" required value="0" /> metros.
-                            <br><br>
-                            <h4>Punto 2</h4>
-                            <label for="anioActual">Coordenada X:</label>
-                            <input type="number" name="coord" id="puntoDosX" required value="0" /> metros.
-                            <br>
-                            <label for="anioActual">Coordenada Y:</label>
-                            <input type="number" name="coord" id="puntoDosY" required value="0" /> metros.
-                        </th>
-                        <th class="tg-0pky"><img src="img.jpg" alt="Coordenadas" width="350px"></th>
-                    </tr>
-                </table>
-                <br>
-                <hr><br>
-                <div class="botones">
-                    <button type="button" id="calcular" class="button" name="calcular"><span>Calcular</span></button>
-                    <button type="reset" id="reset" class="button" name="reset">Reiniciar</button></div>
-            </div>
-            <div id="resultado" name="resultado"></div>
-        </form>
+      <form id="formulario" name="formulario">
+        <h3>Distancia y Velocidad</h3>
+        <h6>
+          Escribir un programa que dadas las coordenadas (x, y) de un punto P1 y
+          un punto P2: <br />A. Calcular la distancia en metros que hay entre
+          los dos puntos. <br />B. El tiempo que se tardaría yendo del punto P1
+          al punto P2 caminando, sabiendo que se camina a razón de 5 k/h.
+        </h6>
+        <br />
+        <hr />
+        <br />
+        <div class="calculoEdad-formulario">
+          <table class="tg">
+            <tr>
+              <th class="tg-0pky">
+                <h4>Punto 1</h4>
+                <label for="anioActual">Coordenada X:</label>
+                <input
+                  type="number"
+                  name="coord"
+                  id="puntoUnoX"
+                  required
+                  value="0"
+                />
+                metros.
+                <br />
+                <label for="anioActual">Coordenada Y:</label>
+                <input
+                  type="number"
+                  name="coord"
+                  id="puntoUnoY"
+                  required
+                  value="0"
+                />
+                metros. <br /><br />
+                <h4>Punto 2</h4>
+                <label for="anioActual">Coordenada X:</label>
+                <input
+                  type="number"
+                  name="coord"
+                  id="puntoDosX"
+                  required
+                  value="0"
+                />
+                metros.
+                <br />
+                <label for="anioActual">Coordenada Y:</label>
+                <input
+                  type="number"
+                  name="coord"
+                  id="puntoDosY"
+                  required
+                  value="0"
+                />
+                metros.
+              </th>
+              <th class="tg-0pky">
+                <img src="img.jpg" alt="Coordenadas" width="350px" />
+              </th>
+            </tr>
+          </table>
+
+          <br />
+          <hr />
+          <br />
+          <div class="botones">
+            <button type="button" id="calcular" class="button" name="calcular">
+              <span>Calcular</span>
+            </button>
+            <button type="reset" id="reset" class="button" name="reset">
+              Reiniciar
+            </button>
+          </div>
+        </div>
+        <div id="resultado" name="resultado"></div>
+      </form>
     </div>
     <div class="footer">
-        <footer>Nacho Caiafa</footer>
+      <footer>Nacho Caiafa</footer>
     </div>
     <script src="test.js"></script>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>

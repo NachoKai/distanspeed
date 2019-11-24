@@ -16,7 +16,7 @@ function mostrar() {
     let distanciaKm = (distanciaMetros * 0.001)
     let kmXhoraAmetrosXMin = 83.3333;
     let tiempoCaminataMinutos = distanciaMetros / kmXhoraAmetrosXMin;
-    let tiempoCaminataHoras = (tiempoCaminataMinutos/60)
+    let tiempoCaminataHoras = (tiempoCaminataMinutos / 60)
 
     if (tiempoCaminataMinutos > 0) {
         nodoResultado.className = ('valido')
