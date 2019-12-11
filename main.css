@@ -12,6 +12,11 @@ button {
   color: #000000;
 }
 
+.table{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .contenedor {
   display: flex;
   min-height: calc(100vh - 20px);
