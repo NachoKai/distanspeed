@@ -14,7 +14,7 @@ button {
 
 .contenedor {
   display: flex;
-  height: 97.7vh;
+  min-height: calc(100vh - 20px);
   background-color: #2a333d;
   align-items: center;
   justify-content: center;
@@ -140,6 +140,16 @@ footer {
   background: #2a333d;
   color: #ffffff;
   text-align: center;
+  height: 20px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  cursor: pointer;
+  color: #e2e2e2;
 }
 
 .error {
